@@ -10,13 +10,11 @@ const initialState: HomeState = {
 const reducer: Reducer<HomeState> = (state = initialState, action) => {
     switch (action.type) {
         case 'Home_Test_Redux':
-          return { ...state, isLoading: true, error: 'ini ada error', };
-    
+            return { ...state, isLoading: true, error: 'ini ada error' };
+
         default:
-          return state;
-      }
-}
+            return state;
+    }
+};
 
 export default reducer;
-
-  
