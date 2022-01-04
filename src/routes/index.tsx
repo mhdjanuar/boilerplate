@@ -5,10 +5,10 @@ import PublicRoute from './Public';
 import NotFound from '../components/errors';
 
 interface RouteProps {
-    auth?: boolean,
-    component: any,
-    path: string,
-    exact: boolean,
+    auth?: boolean;
+    component: any;
+    path: string;
+    exact: boolean;
 }
 
 const Routes = () => {
@@ -24,7 +24,7 @@ const Routes = () => {
                 <Route path="*" component={NotFound} />
             </Switch>
         </Router>
-    )
-}
+    );
+};
 
 export default Routes;
